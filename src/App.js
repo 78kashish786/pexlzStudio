@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Clients from './components/Clients.js';
+import ContactSection from './components/ContactSection.js';
+import HeroSection from './components/HeroSection.js';
+import MainFooter from './components/MainFooter.js';
+import MainHeader from './components/MainHeader.js';
+import Projects from './components/Projects.js';
+import Services from './components/Services.js';import { RiInstagramFill } from "react-icons/ri";
 
 function App() {
   return (
+    <>
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainHeader/>
+      <HeroSection/>
+      <Clients/>
+      <Services/>
+      <Projects/>
+      <ContactSection/>
+      <MainFooter/>
     </div>
+    {/* <div className='fixed right-0 top-[50%] bottom-[50%] bg-cyan-400 '>
+      <ul className='p-3 bg-cyan-400 rounded-sm space-y-3'>
+        <li><RiInstagramFill size={30} color=''/></li>
+        <li><RiInstagramFill size={30} color=''/></li>
+        <li><RiInstagramFill size={30} color=''/></li>
+      </ul>
+    </div> */}
+    </>
   );
 }
 
